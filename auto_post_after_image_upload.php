@@ -18,11 +18,13 @@ function auto_post_after_image_upload($attachId)
 {
 
     $attachment = get_post($attachId);
+    $image = wp_get_attachment_image_src( $attachId, 'large');
+    $image_tag = '<p><img src="'.$image[0].'" /></p>';
 
     $postData = array(
         'post_title' => $attachment->post_title,
         'post_type' => 'post',
-        'post_content' => $attachment->post_title,
+        'post_content' => $image_tag . $attachment->post_title,
         'post_category' => array('0'),
         'post_status' => 'publish'
     );
@@ -30,12 +32,10 @@ function auto_post_after_image_upload($attachId)
     $post_id = wp_insert_post($postData);
 
     // attach media to post
-    wp_update_post(
-        array(
-            'ID' => $attachId,
-            'post_parent' => $post_id,
-        )
-    );
+    wp_update_post(array(
+        'ID' => $attachId,
+        'post_parent' => $post_id,
+    ));
 
     set_post_thumbnail($post_id, $attachId);
 
