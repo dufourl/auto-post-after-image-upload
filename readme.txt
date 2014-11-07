@@ -16,6 +16,8 @@ This `Auto Post After Image Upload` plugin will let you create single/bulk post 
 When you will upload an image from wordpress media gallery then a post will be created automatically with that image as featured image.
 
 Website of Author: [http://www.shahariaazam.com](http://www.shahariaazam.com)
+Submit Issues: [https://github.com/shahariaazam/auto-post-after-image-upload/issues/new](https://github.com/shahariaazam/auto-post-after-image-upload/issues/new)
+Project GitHub URL: [https://github.com/shahariaazam/auto-post-after-image-upload](https://github.com/shahariaazam/auto-post-after-image-upload)
 
 For more details you can send mail with your suggestions, recommendation to shaharia.azam@gmail.com
 
