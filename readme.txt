@@ -2,8 +2,8 @@
 Contributors: shaharia.azam
 Tags: auto post, post, image upload
 Requires at least: 3.0.1
-Tested up to: 3.6
-Stable tag: 1.0
+Tested up to: 4.4
+Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,7 +16,7 @@ This `Auto Post After Image Upload` plugin will let you create single/bulk post 
 When you will upload an image from wordpress media gallery then a post will be created automatically with that image as featured image.
 
 Website of Author: [http://www.shahariaazam.com](http://www.shahariaazam.com)
-Submit Issues: [https://github.com/shahariaazam/auto-post-after-image-upload/issues/new](https://github.com/shahariaazam/auto-post-after-image-upload/issues/new)
+Submit Issues/Suggestions/Recommendations: [https://github.com/shahariaazam/auto-post-after-image-upload/issues/new](https://github.com/shahariaazam/auto-post-after-image-upload/issues/new)
 Project GitHub URL: [https://github.com/shahariaazam/auto-post-after-image-upload](https://github.com/shahariaazam/auto-post-after-image-upload)
 
 For more details you can send mail with your suggestions, recommendation to shaharia.azam@gmail.com
@@ -45,3 +45,30 @@ There is no Screenshot yet!
 
 = 1.0 =
 * Initial release
+
+= 1.01 =
+
+New features:
+
+* New plugin settings page
+* You can now customize for all the photo that you will uploaded : default text content, default title, default simple or multiple tags, default format, default status
+* An HREF to your photo is now possible, you can customize the class for HREF (Eg : "lightbox" if you are using a plugin based on lightbox to display your photo)
+* If you want you can use your photo filename as a default title
+* If you want you can add the article's title to the ALT of the HREF
+* If possible, exif from you photo will be used to complete width and height, as well as a bottom caption text with a sum up of useful exif informations
+* If your photo is detected as a square, you can add somme specific tags (Eg : 6x6 )
+
+= 1.02 =
+
+Bug corrected:
+
+*properly handled the camera brand and model as tags
+
+New features:
+
+* If you want you can use the year date of the post or the date of a photo attached as a tag
+* If you want you can autodetect from the date of a photo attached the season as a tag (winter, spring, summer, autumn)
+* If you want you can autodetect from the time of a photo attached the period of the day as a tag (morning, afternoon, night)
+* If your photo is detected as a landscape format, you can add somme specific tags (Eg : Landscape )
+* If your photo is detected as a portrait format, you can add somme specific tags (Eg : Portrait )
+* If your photo is detected as a landscape format, you can add somme specific tags (Eg : Landscape )
