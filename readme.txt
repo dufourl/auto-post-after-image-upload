@@ -1,8 +1,8 @@
 === Auto Post After Image Upload ===
-Contributors: shaharia.azam
+Contributors: shaharia.azam / laurent.dufour
 Tags: auto post, post, image upload
 Requires at least: 3.0.1
-Tested up to: 4.4
+Tested up to: 4.9.4
 Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -19,7 +19,7 @@ Website of Author: [http://www.shahariaazam.com](http://www.shahariaazam.com)
 Submit Issues/Suggestions/Recommendations: [https://github.com/shahariaazam/auto-post-after-image-upload/issues/new](https://github.com/shahariaazam/auto-post-after-image-upload/issues/new)
 Project GitHub URL: [https://github.com/shahariaazam/auto-post-after-image-upload](https://github.com/shahariaazam/auto-post-after-image-upload)
 
-For more details you can send mail with your suggestions, recommendation to shaharia.azam@gmail.com
+For more details you can send mail with your suggestions, recommendation to shaharia.azam@gmail.com or laurent.dufour@havas.com
 
 
 == Installation ==
@@ -69,6 +69,72 @@ New features:
 * If you want you can use the year date of the post or the date of a photo attached as a tag
 * If you want you can autodetect from the date of a photo attached the season as a tag (winter, spring, summer, autumn)
 * If you want you can autodetect from the time of a photo attached the period of the day as a tag (morning, afternoon, night)
-* If your photo is detected as a landscape format, you can add somme specific tags (Eg : Landscape )
-* If your photo is detected as a portrait format, you can add somme specific tags (Eg : Portrait )
-* If your photo is detected as a landscape format, you can add somme specific tags (Eg : Landscape )
+* If your photo is detected as a landscape format, you can add some specific tags (Eg : Landscape )
+* If your photo is detected as a portrait format, you can add some specific tags (Eg : Portrait )
+* If your photo is detected as a landscape format, you can add some specific tags (Eg : Landscape )
+
+= 1.03 =
+
+Bug corrected:
+
+*Now properly handle the season from the date of a photo
+
+= 1.04 =
+
+Bug corrected:
+
+*Now properly handle the Shutter Speed from exif
+*Now properly handle the Focal Length from exif
+*Now properly handle the F Stop Number from exif
+
+New features:
+
+* If you want you can use the focal length of a photo attached as a tag
+* If you want you can use the type of focal length (Ultra Wide Angle, Wide Angle, Standard, Telephoto, Super Telephoto) of a photo attached as a tag
+* If you want you can autodetect long exposure from the shutter speed of a photo attached and set appropriate tags (Eg : Long Exposure)
+
+= 1.05 =
+
+Bug corrected:
+
+*Now properly handle the autodetection of long exposure from exif
+
+New features:
+
+* If you want you can autodetect color or black and white photography from the density of grey in the photo set appropriate tags (Eg : Colors)
+* Now handle GPS Coordinates (Tested with Nikon, need to test with other brand like Canon/Pentax/etc...)
+* Display GPS Location on Google Maps (Need to download an API Key from Google)
+* Tested in Wordpress 4.7.3
+
+= 1.06 =
+
+Bug corrected:
+
+*Now properly handle the season from the date of a photo
+ 
+New features:
+
+* Better detection of BW
+* Now autodetect analog or digital photography based on the presence of exif and set appropriate tags (Eg : Analog)
+* Now you can set additional categories to the default one
+* Automatic addition of your own categories ID based on detection of colors, black & white, analog or digital, long exposure
+
+* Tested in Wordpress 4.8.1
+
+= 1.07 =
+ 
+New features:
+
+* Now autodetect format 24x36, 6x5, 6x6 6x7, 6x17 24x65 (aka XPAN) , and set appropriate categories ID or tags
+* Now detect Color analog or Color digital photography based on the presence of exif and set appropriate tags  (Eg : Color Film) or categories ID
+* Now detect BW analog or BW digital photography based on the presence of exif and set appropriate tags (Eg : Black & White Film) or categories ID
+
+* Tested in Wordpress 4.9.4
+
+= 1.1 =
+ 
+New features:
+
+* Now you can use category name instead of category IDs
+
+* Tested in Wordpress 4.9.5
